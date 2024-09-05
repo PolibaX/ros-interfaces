@@ -1,0 +1,32 @@
+{
+    "name": "ROS 2 Python Development Container",
+    "privileged": true,
+    "remoteUser": "polibax",
+    "image": "polibax/ros2-humble:dev",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "ms-iot.vscode-ros",
+                "sweilz.ros-snippets",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-vsliveshare.vsliveshare"
+            ]
+        }
+    },
+    "workspaceFolder": "/home/polibax-interfaces",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/polibax-interfaces,type=bind",
+    "runArgs": [
+        "--net=host",
+        "--ipc=host",
+        "-P",
+        "-e",
+        "DISPLAY=host.docker.internal:0"
+    ],
+    "mounts": [
+        //"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached" // for Linux
+    ],
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R polibax /home/polibax-interfaces/"
+}
