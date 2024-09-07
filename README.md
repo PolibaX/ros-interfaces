@@ -69,3 +69,7 @@ To use these custom interfaces within a Docker container, you need to modify the
 1. **Copy the custom interfaces into the Docker image.**
 2. **Build the custom interfaces inside the Docker container.**
 3. **Source the workspace to make the interfaces available.**
+
+## TODOs
+
+- [ ] Specific action interfaces for different tasks called by the puppet with useful parameters
