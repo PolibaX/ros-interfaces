@@ -1,0 +1,54 @@
+[33mcommit 21f2e066f8dd858c373dab2dd15585d757a7d421[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: santal1210 <sant.nino02@gmail.com>
+Date:   Mon Sep 9 23:46:12 2024 +0200
+
+    add Dummy action in Cmakelist
+
+[33mcommit 9f82d52392330cc2e51465b01e21e187e2591d11[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: AntoPio26 <a.maggio4@studenti.poliba.it>
+Date:   Sat Sep 7 09:35:37 2024 +0000
+
+    Added dummy action
+
+[33mcommit a28910067d111f0ddcbb3a0ad01e07a87ad1832a[m
+Author: AntoPio26 <a.maggio4@studenti.poliba.it>
+Date:   Fri Sep 6 19:44:36 2024 +0000
+
+    Added StringTrigger service interface
+
+[33mcommit 41c3dfd230c13672b0f17e38789dd0d812ba19c7[m[33m ([m[1;32mmain[m[33m)[m
+Author: GabrieleSantangelo <sant.nino02@gmail.com>
+Date:   Thu Sep 5 14:53:16 2024 +0000
+
+    change packet's name
+
+[33mcommit 5eab000ba1d66fcb29d9f4d982bc8d7d369a7cf2[m
+Merge: 5af9d8e 4482cec
+Author: santal1210 <sant.nino02@gmail.com>
+Date:   Thu Sep 5 16:20:58 2024 +0200
+
+    Merge branch 'main' of github.com:PolibaX/ros-interfaces
+
+[33mcommit 5af9d8e124f7931baa8323c7eff6150881a16639[m
+Author: santal1210 <sant.nino02@gmail.com>
+Date:   Thu Sep 5 14:19:48 2024 +0000
+
+    add depend
+
+[33mcommit 4482cec6e0c280971b608dd8f42a7dd35338bc88[m
+Author: Antonio Pio Maggio <antoniopio.maggio@icloud.com>
+Date:   Thu Sep 5 16:01:03 2024 +0200
+
+    Update README.md
+
+[33mcommit 133042132c6dd6dbbf13eac3c2935dcd52991944[m
+Author: santal1210 <sant.nino02@gmail.com>
+Date:   Thu Sep 5 14:53:47 2024 +0200
+
+    first commit
+
+[33mcommit ba14ff8ff584ee68e2f2cb79a49df44b9166862d[m
+Author: santal1210 <sant.nino02@gmail.com>
+Date:   Thu Sep 5 14:51:48 2024 +0200
+
+    first commit

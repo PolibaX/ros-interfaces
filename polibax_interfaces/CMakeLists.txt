@@ -28,6 +28,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArucoMarkers.msg"
   "srv/StringTrigger.srv"
+  "action/Dummy.action"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
  )
