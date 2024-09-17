@@ -29,6 +29,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArucoMarkers.msg"
   "srv/StringTrigger.srv"
   "action/Dummy.action"
+  "action/Explore.action"
+  "action/Land.action"
+  "action/MoveTo.action"
+  "action/Takeoff.action"
+  "srv/Takeoff.srv"
+  "srv/Land.srv"
+  "srv/MoveTo.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
  )
