@@ -1,9 +1,4 @@
-
-std_msgs/Header header
-
-float x
-float y
-float z
+geometry_msgs/Pose pose
 uint32 id
 string robot
 uint8[] imgjpgmono8
