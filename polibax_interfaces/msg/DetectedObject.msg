@@ -1,9 +1,7 @@
 
 std_msgs/Header header
 
-float x
-float y
-float z
+geometry_msgs/Pose pose
 string class
 string robot
 uint8[] imgjpgbgr
