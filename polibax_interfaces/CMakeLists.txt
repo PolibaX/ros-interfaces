@@ -27,6 +27,10 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArucoMarkers.msg"
+  "msg/ArucoImage.msg"
+  "msg/ArucoRegistry.msg"
+  "msg/DetectedObject.msg"
+  "msg/ObjectRegistry.msg"
   "srv/StringTrigger.srv"
   "action/Dummy.action"
   "action/Explore.action"
