@@ -29,6 +29,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArucoMarkers.msg"
   "msg/ArucoImage.msg"
   "msg/ArucoRegistry.msg"
+  "msg/ArucoWhitelist.msg"
   "msg/DetectedObject.msg"
   "msg/ObjectRegistry.msg"
   "srv/StringTrigger.srv"
