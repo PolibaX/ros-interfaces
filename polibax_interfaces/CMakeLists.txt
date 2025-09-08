@@ -32,6 +32,10 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/ArucoWhitelist.msg"
   "msg/DetectedObject.msg"
   "msg/ObjectRegistry.msg"
+  "msg/Vec2.msg"
+  "msg/Pid.msg"
+  "msg/MotorControlStatus.msg"
+  "msg/RoverStatus.msg"
   "srv/StringTrigger.srv"
   "action/Dummy.action"
   "action/Explore.action"
@@ -42,6 +46,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/Land.srv"
   "srv/Cry.srv"
   "srv/MoveTo.srv"
+  "srv/DoublePid.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
  )

@@ -1,0 +1,5 @@
+float32 pwm
+float32 integral
+float32 current
+float32 angular_velocity_setpoint
+float32 angular_velocity
