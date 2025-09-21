@@ -1,0 +1,9 @@
+int32 task_id
+string task_type
+string request_time
+string deadline
+int32 max_value
+string agent
+string target_type
+string target
+string zone
