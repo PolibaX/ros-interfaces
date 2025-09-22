@@ -1,0 +1,33 @@
+# Interfaccia di MissionOrder.action
+# praticamente quello che chiede Mangiafuoco ad un singolo puppet sotto suggerimento di savoiardo
+# e quello che viene restituito dai puppet
+
+##### GOAL #####
+# qui ci sono le richieste di mangiafuoco ai puppet
+# l'interfaccia è fatta per gestire ogni task type genericamente
+# quindi certi campi possono essere sotto utilizzati o non utilizzati proprio a seconda del task
+# chi implementa i task leggendo il task type deve sapere cosa andare a leggere
+
+int32 task_id # id del task secondo i giudici
+
+string task_type # "find_object", "find_target", "ptz_collab", "follow_sequence", "emergency_rtb", "emergency_landing"
+
+int32[] target_ids # per target numerici e sequenze di target come su "find_target" e "follow_sequence"
+
+geometry_msgs/Pose poses # per task in cui savoiardo conosce già la posa dove andare a fare il task, info che può usare il puppet
+
+string object_name # per target che hanno una label tipo nel task "find_object"
+
+geometry_msgs/Point[] zone # lista di vertici (in metri) che rappresentano la zona su cui cercare (è una scelta del puppet se usarla o meno)
+
+---
+##### RESULT #####
+string success_message
+
+sensor_msgs/Image[] photo_list # lista di immagini (più di una solo per find the target)
+
+int32 sequence_index # indice incrementale per il follow the sequence (forse non serve)
+
+---
+##### FEEDBACK #####
+string progress # stringa per flessibilità, potrebbe comunque mantenere una percentuale numerica progressiva o una label, scegliamo nei nodi e non qui così non dobbiamo ribuildare
