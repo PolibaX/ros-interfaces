@@ -4,6 +4,6 @@ geometry_msgs/Pose current_pose
 geometry_msgs/Pose goal_pose
 string current_task
 float32 battery
-Entities[] object
-Entities[] aruco
+Entity[] object
+Entity[] aruco
 
