@@ -1,2 +1,2 @@
-string entity_id 
+string id 
 geometry_msgs/Pose pose
