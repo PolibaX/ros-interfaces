@@ -1,0 +1,4 @@
+uint16 task_id
+bool complete
+---
+bool success

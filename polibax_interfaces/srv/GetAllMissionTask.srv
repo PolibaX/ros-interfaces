@@ -1,3 +1,4 @@
+bool filtered
 ---
 MissionTask[] task
 bool success

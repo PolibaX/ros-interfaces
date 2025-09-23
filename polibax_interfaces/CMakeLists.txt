@@ -52,6 +52,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetMissionTask.srv"
   "srv/GetAllMissionTask.srv"
   "srv/AddMissionTask.srv"
+  "srv/SetMissionComplete.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
  )
