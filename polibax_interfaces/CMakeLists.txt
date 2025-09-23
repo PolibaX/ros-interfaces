@@ -19,6 +19,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
@@ -46,6 +47,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/Land.action"
   "action/MoveTo.action"
   "action/Takeoff.action"
+  "action/MissionOrder.action"
   "srv/Takeoff.srv"
   "srv/Land.srv"
   "srv/Cry.srv"
@@ -58,6 +60,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetContext.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
+  DEPENDENCIES sensor_msgs
  )
 
 
