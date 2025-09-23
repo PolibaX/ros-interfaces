@@ -27,10 +27,7 @@ find_package(rosidl_default_generators REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/ArucoMarkers.msg"
-  "msg/ArucoImage.msg"
-  "msg/ArucoRegistry.msg"
-  "msg/ArucoWhitelist.msg"
+  "msg/EntityList.msg"
   "msg/DetectedObject.msg"
   "msg/ObjectRegistry.msg"
   "msg/Vec2.msg"
