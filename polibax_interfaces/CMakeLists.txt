@@ -40,7 +40,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/MissionTask.msg"
   "msg/MissionTaskList.msg"
   "msg/AgentStatus.msg"
-  "msg/Entities.msg"
+  "msg/Entity.msg"
   "srv/StringTrigger.srv"
   "action/Dummy.action"
   "action/Explore.action"
