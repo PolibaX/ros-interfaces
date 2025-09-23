@@ -38,6 +38,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/RoverStatus.msg"
   "msg/MissionTask.msg"
   "msg/MissionTaskList.msg"
+  "msg/AgentStatus.msg"
+  "msg/Entities.msg"
   "srv/StringTrigger.srv"
   "action/Dummy.action"
   "action/Explore.action"
@@ -53,6 +55,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/GetAllMissionTask.srv"
   "srv/AddMissionTask.srv"
   "srv/SetMissionComplete.srv"
+  "srv/GetContext.srv"
   DEPENDENCIES geometry_msgs
   DEPENDENCIES std_msgs
  )
