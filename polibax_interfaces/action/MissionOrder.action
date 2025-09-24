@@ -26,8 +26,18 @@ string success_message
 
 sensor_msgs/Image[] photo_list # lista di immagini (più di una solo per find the target)
 
-int32 sequence_index # indice incrementale per il follow the sequence (forse non serve)
+int32 sequence_index # indice incrementale per il follow the marker
+
+string completion_time # esempio di stringa 2025-09-16 15:25:30 (questa la deve riempire il task tipo aruco photo perchè il timestamp deve essere lo stesso di quello di opencv)
 
 ---
 ##### FEEDBACK #####
-string progress # stringa per flessibilità, potrebbe comunque mantenere una percentuale numerica progressiva o una label, scegliamo nei nodi e non qui così non dobbiamo ribuildare
+string progress_message # stringa per flessibilità, potrebbe comunque mantenere una percentuale numerica progressiva o una label, scegliamo nei nodi e non qui così non dobbiamo ribuildare
+
+string success_message
+
+sensor_msgs/Image[] photo_list # lista di immagini (più di una solo per find the target)
+
+int32 sequence_index # indice incrementale per il follow the marker
+
+string completion_time # esempio di stringa 2025-09-16 15:25:30 (questa la deve riempire il task tipo aruco photo perchè il timestamp deve essere lo stesso di quello di opencv)
