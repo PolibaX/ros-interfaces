@@ -10,7 +10,7 @@
 
 int32 task_id # id del task secondo i giudici
 
-string task_type # "find_object", "find_target", "ptz_collab", "follow_sequence", "emergency_rtb", "emergency_landing"
+string task_type # "find_object", "find_target", "ptz_collab"(?), "follow_sequence", "emergency_rtb", "emergency_landing"
 
 int32[] target_ids # per target numerici e sequenze di target come su "find_target" e "follow_sequence"
 
