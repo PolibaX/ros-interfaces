@@ -4,12 +4,15 @@ This repository contains custom ROS2 interfaces including messages, services, an
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Custom Interfaces](#custom-interfaces)
-- [Installation](#installation)
-- [Building and Using the Custom Interfaces](#building-and-using-the-custom-interfaces)
-- [Docker Integration](#docker-integration)
-  - [Modifying the Dockerfile](#modifying-the-dockerfile)
+- [Custom ROS2 Interfaces](#custom-ros2-interfaces)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Custom Interfaces](#custom-interfaces)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Building and Using the Custom Interfaces](#building-and-using-the-custom-interfaces)
+  - [Docker Integration](#docker-integration)
+    - [Modifying the Dockerfile](#modifying-the-dockerfile)
 
 
 ## Overview
@@ -69,7 +72,3 @@ To use these custom interfaces within a Docker container, you need to modify the
 1. **Copy the custom interfaces into the Docker image.**
 2. **Build the custom interfaces inside the Docker container.**
 3. **Source the workspace to make the interfaces available.**
-
-## TODOs
-
-- [ ] Specific action interfaces for different tasks called by the puppet with useful parameters
