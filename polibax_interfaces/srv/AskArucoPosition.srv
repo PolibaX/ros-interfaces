@@ -1,0 +1,13 @@
+# L'ID del marker ArUco di cui si vuole conoscere la posizione.
+int32 aruco_id
+
+---
+# Indica se la richiesta ha avuto successo (true) o no (false).
+# Sarà 'false' se l'ID richiesto non è presente nel contesto.
+bool success
+
+# La posizione 2D del marker.
+# Si usa geometry_msgs/Point per convenzione, impostando z = 0.
+geometry_msgs/Point position
+# Un messaggio di testo che può contenere informazioni aggiuntive.
+string message
