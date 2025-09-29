@@ -1,6 +1,6 @@
 int32 target_id
 ---
-sensor_msgs/Image photo
+sensor_msgs/CompressedImage photo
 bool success
 ---
 string message
