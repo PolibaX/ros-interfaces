@@ -1,4 +1,4 @@
-int32 targert_id
+int32 target_id
 ---
 sensor_msgs/Image[] photo
 bool success
