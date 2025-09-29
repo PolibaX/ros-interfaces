@@ -24,7 +24,7 @@ geometry_msgs/Point[] zone # lista di vertici (in metri) che rappresentano la zo
 ##### RESULT #####
 string success_message
 
-sensor_msgs/Image[] photo_list # lista di immagini (più di una solo per find the target)
+sensor_msgs/CompressedImage[] photo_list # lista di immagini (più di una solo per find the target)
 
 int32 sequence_index # indice incrementale per il follow the marker
 
@@ -36,7 +36,7 @@ string progress_message # stringa per flessibilità, potrebbe comunque mantenere
 
 string success_message
 
-sensor_msgs/Image[] photo_list # lista di immagini (più di una solo per find the target)
+sensor_msgs/CompressedImage[] photo_list # lista di immagini (più di una solo per find the target)
 
 int32 sequence_index # indice incrementale per il follow the marker
 

@@ -16,7 +16,7 @@ string object_name
 
 ### Risultati ###
 string completion_time
-sensor_msgs/Image[] photo_list
+sensor_msgs/CompressedImage[] photo_list
 string success_message # Messaggio interno di successo del puppet
 
 ---
