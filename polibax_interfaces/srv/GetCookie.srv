@@ -1,33 +1,33 @@
 # GetCookie.srv
-# Servizio chiamato da Mangiafuoco per richiedere a CookieTrader 
-# di comunicare il completamento di un task al Mission Manager e ottenere punti.
+# Service called by Mangiafuoco to request CookieTrader 
+# to communicate task completion to the Mission Manager and get points.
 
-# =========================== RICHIESTA ===========================
-# Questi sono i dati che Mangiafuoco invia a CookieTrader.
+# =========================== REQUEST ===========================
+# This is the data that Mangiafuoco sends to CookieTrader.
 
-### Info sul task che mangiafuoco già ha ###
+### Task info that Mangiafuoco already has ###
 int32 task_id
 string task_type
 string request_time
 
-# Lasciati vuoti se non servono per il task specifico
+# Leave empty if not needed for the specific task
 int32[] target_ids 
 string object_name
 
-### Risultati ###
+### Results ###
 string completion_time
 sensor_msgs/CompressedImage[] photo_list
-string success_message # Messaggio interno di successo del puppet
+string success_message # Internal success message from the puppet
 
 ---
 
-# =========================== RISPOSTA ============================
-# Questi sono i dati che CookieTrader restituisce a Mangiafuoco 
-# dopo aver comunicato con il MM.
+# =========================== RESPONSE ============================
+# This is the data that CookieTrader returns to Mangiafuoco 
+# after communicating with the MM.
 
-# Flag per indicare se la comunicazione con il MM è andata a buon fine
+# Flag to indicate if communication with the MM was successful
 bool mm_accepted 
 
-# Messaggio di risposta dal MM o di stato interno di CookieTrader
-# es: "OK", "Punti registrati", "Errore: timeout dal MM", etc.
+# Response message from MM or internal status from CookieTrader
+# e.g.: "OK", "Points registered", "Error: MM timeout", etc.
 string mm_response
