@@ -45,6 +45,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "action/MoveTo.action"
   "action/Takeoff.action"
   "action/MissionOrder.action"
+  "action/FindTarget.action"
   "srv/Takeoff.srv"
   "srv/Land.srv"
   "srv/Cry.srv"
